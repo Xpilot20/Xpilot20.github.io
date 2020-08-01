@@ -49,3 +49,32 @@ nav{
 }
 
 
+.seminar {
+    background-color: #96bb7c;
+}
+.web {
+    background-color: #eebb4d;
+}
+.ip {
+    background-color: #ffc7c7;
+}
+.os {
+    background-color: #8fcfd1;
+}
+.sa {
+    background-color: #dbc6eb;
+}
+.sw {
+    background-color: #eb4559;
+}
+.arch {
+    background-color: #8186d5;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #000000;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #000000;
+}
+
