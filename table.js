@@ -1,3 +1,41 @@
-const point = [10,20,30,40,50];
-console.log(point);
-document.write(point)
+var list = {"อาทิตย์":[""],
+            "จันทร์":["01418497 Seminar"],
+            "อังคาร":["01418442 Web Technology","01418442 Web Technology Lab"],
+            "พุธ":["01418341 IP","01418331 OS","01418321 SA","01418321 SA LAB"],
+            "พฤหัส":["01418471 SW EN","01418471 SW EN LAB","01175117 Archery"],
+            "ศุกร์":["01418341 IP","01418331 OS"],
+            "เสาร์":[""]}
+
+var listSub = {"01418497 Seminar":["หมู่ 5","ชาคริต,ศิริกร","เวลา: (จ.)8:00-11:00"],
+
+            "01418442 Web Technology":["หมู่ 1","สุขุมาล,ศรชัย","เวลา: (อ.)8:00-10:00"],
+            "01418442 Web Technology Lab":["หมู่ 11","สุขุมาล,ศรชัย","เวลา: (อ.)12:30-14:30"],
+
+            "01418341 IP":["หมู่ 1","นวลวรรณ","เวลา: (พ.)(ศ.)10:00-11:30"],
+
+            "01418331 OS":["หมู่ 1","ศิริกร","เวลา: (พ.)(ศ.)12:00-14:00"],
+
+            "01418321 SA":["หมู่ 1","สมโชค","เวลา: (พ.)14:00-16:00"],
+            "01418321 SA LAB":["หมู่ 11","สมโชค","เวลา: (พ.)16:00-18:00"],
+
+            "01418471 SW EN LAB":["หมู่ 11","อุษา","เวลา: (พฤ.)8:00-10:00"],
+            "01418471 SW EN":["หมู่ 1","อุษา","เวลา: 11:00-13:00"],
+
+            "01175117 Archery":["หมู่ 14","ณัฐพงศ์","เวลา: 16:30-18:30"]}
+
+function show(day){
+    var  subject = list[day]
+    console.log(subject);
+    var s = ""
+    for (var i = 0 ; i<subject.length;i++){
+        s += subject[i] + "<br>"
+        var detail = listSub[subject[i]]
+        // console.log(detail);
+        for (var j=0 ;j < detail.length;j++){
+            s+=detail[j]+"<br>"
+        }
+        s+="<br>"
+    }
+    console.log(s);
+    document.getElementById("detail").innerHTML=s
+}

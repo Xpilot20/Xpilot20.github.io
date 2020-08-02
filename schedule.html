@@ -51,38 +51,38 @@
         <tbody>
 
             <tr>
-                <th scope="row"  colspan="2">อาทิตย์</th>
+                <th scope="row"  colspan="2" onclick="show(this.innerHTML)">อาทิตย์</th>
                 <td colspan="22"></td>
               </tr>
 
           <tr>
-            <th scope="row"  colspan="2">จันทร์</th>
+            <th scope="row"  colspan="2"  onclick="show(this.innerHTML)">จันทร์</th>
             <td colspan="6" class="seminar">01418497 Seminar</td>
             <td colspan="16"></td>
           </tr>
 
           <tr>
-            <th scope="row"  colspan="2">อังคาร</th>
+            <th scope="row"  colspan="2"  onclick="show(this.innerHTML)">อังคาร</th>
             <td colspan="4" class="web">01418442 Web Technology</td>
             <td colspan="5"></td>
-            <td colspan="4"  class="web">01418442 Web Technology</td>
+            <td colspan="4"  class="web">01418442 Web Technology Lab</td>
             <td colspan="9"></td>
           </tr>
 
           <tr>
-            <th scope="row"  colspan="2">พุธ</th>
+            <th scope="row"  colspan="2"  onclick="show(this.innerHTML)">พุธ</th>
             <td colspan="4"></td>
             <td colspan="3" class="ip">01418341 IP</td>
             <td colspan="1"></td>
             <td colspan="4" class="os">01418331 OS</td>
             <td colspan="4" class="sa">01418321 SA</td>
-            <td colspan="4" class="sa">01418321 SA</td>
+            <td colspan="4" class="sa">01418321 SA LAB</td>
             <td colspan="2"></td>
           </tr>
 
           <tr>
-            <th scope="row"  colspan="2">พฤหัสบดี</th>
-            <td colspan="4" class="sw">01418471 SW EN</td>
+            <th scope="row"  colspan="2"  onclick="show(this.innerHTML)">พฤหัส</th>
+            <td colspan="4" class="sw">01418471 SW EN LAB</td>
             <td colspan="2"></td>
             <td colspan="4" class="sw">01418471 SW EN</td>
             <td colspan="7"></td>
@@ -91,7 +91,7 @@
           </tr>
 
           <tr>
-            <th scope="row"  colspan="2">ศุกร์</th>
+            <th scope="row"  colspan="2"  onclick="show(this.innerHTML)">ศุกร์</th>
             <td colspan="4"></td>
             <td colspan="3" class="ip">01418341 IP</td>
             <td colspan="1"></td>
@@ -100,15 +100,18 @@
           </tr>
 
           <tr>
-            <th scope="row"  colspan="2">เสาร์</th>
+            <th scope="row"  colspan="2"  onclick="show(this.innerHTML)">เสาร์</th>
             <td colspan="22"></td>
           </tr>
         </tbody>
       </table>
 
+      <div id="detail"></div>
+
     
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="table.js"></script>
 </body>
 </html>
